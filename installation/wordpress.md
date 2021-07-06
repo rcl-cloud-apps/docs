@@ -46,5 +46,28 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ![image](../images/installation/wordpress-manage.png)
 
+- You should see the WordPress install page. If you do not see this page or you are presented with another page or a 'not found' message, wait for a few more minutes for the site to be installed in the App Service Plan.
+
+- Select the language and click the 'Continue' button.
+
+![image](../images/installation/wordpress-install-lang.png)
+
+- Provide the information needed for the installation and click the 'Install WordPress' button
+
+![image](../images/installation/wordpress-install-info.png)
+
+- Wait for a few minutes for the installation to complete. Then, click the 'Log In' button to login to the WordPress Admin Portal.
+
+![image](../images/installation/wordpress-install-login.png)
+
+- Enter the UserName and Password that you previously set and click the 'Login' button.
+
+![image](../images/installation/wordpress-install-login2.png)
+
+- You can start building your website in the WordPress Admin Portal.
+
+![image](../images/installation/wordpress-admin-portal.png)
+
+
 
 
