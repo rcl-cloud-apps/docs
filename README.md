@@ -1,3 +1,0 @@
-# Introduction
-
-RCL Web Apps.
