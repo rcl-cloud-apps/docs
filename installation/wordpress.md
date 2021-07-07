@@ -1,6 +1,6 @@
 ---
 title: WordPress
-description: Learn how to install WordPress in a Azure App Service Plan using RCL Web Apps
+description: Learn how to install WordPress in an Azure App Service Plan using RCL Web Apps
 parent: Installation
 nav_order: 1
 ---
@@ -11,7 +11,7 @@ In this section, you will learn how to install WordPress in a Azure App Service 
 
 # Requirements
 
-An **Azure App Service Plan** is required for the installation of WordPress. The App Service Plan must be :
+An **Azure App Service Plan** is required for this installation. The App Service Plan must be :
 
 - Higher than the Free and Shared Tier
 - A Windows Server
@@ -22,7 +22,7 @@ An **Azure App Service Plan** is required for the installation of WordPress. The
 
 - In the RCL Web Apps portal, click on the 'Install Web Apps' menu item
 
-- Then click the 'Install' button in the Word Press panel
+- Then click the 'Install' button in the WordPress panel
 
 ![image](../images/installation/wordpress-install.png)
 
@@ -30,7 +30,7 @@ An **Azure App Service Plan** is required for the installation of WordPress. The
 
 - Click the 'Submit' button when you are done.
 
-![image](../images/installation/wordpress-install2.png)
+![image](../images/installation/webapp-install.png)
 
 - **You will need to wait 15 minutes for the web app to be completely installed in the App Service Plan, so be patient.**
 
