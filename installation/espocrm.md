@@ -26,9 +26,9 @@ An **Azure App Service Plan** is required for this installation. The App Service
 
 ![image](../images/installation/espocrm-install.png)
 
-- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. The App Service Plan must be higher than the Free and Shared tiers.
+- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. The App Service Plan must be higher than the Free and Shared tiers
 
-- Click the 'Submit' button when you are done.
+- Click the 'Submit' button when you are done
 
 ![image](../images/installation/webapp-install.png)
 
@@ -40,15 +40,55 @@ An **Azure App Service Plan** is required for this installation. The App Service
 
 Once the web application is successfully installed in the App Service Plan, you will continue to install EspoCRM.
 
-- Click the 'My Web Apps' menu link, and scroll down to the WordPress app
+- Click the 'My Web Apps' menu link, and scroll down to the EspoCRM app
 
 - In the 'Manage' dropdown menu, select 'Launch Web App'
 
 ![image](../images/installation/espocrm-manage.png)
 
-- You should see the EspoCRM install page. If you do not see this page or you are presented with another page or a 'not found' message, wait for a few more minutes for the site to be installed in the App Service Plan.
+- You should see the EspoCRM install page. If you do not see this page, wait for a few more minutes for the site to be installed in the App Service Plan.
 
-- Select the language and click the 'Start' button.
+![image](../images/installation/espocrm-install-lang.png)
+
+## Custom PHP.INI Settings 
+
+EspoCRM requires custom PHP.INI settings. Follow these instructions to create the settings :
+
+- In the RCL Web Apps portal, click on the 'Manage' button for the EspoCRM web app
+
+- Click on the 'Custom PHP.INI settings' link
+
+![image](../images/installation/espocrm-manage.png)
+
+- In the 'Custom PHP.INI Settings' page, click on the 'Create/Update custom PHP.INI settings' link
+
+![image](../images/installation/php-ini-create.png)
+
+- Create a text file with the following settings :
+
+![image](../images/installation/espocrm-php-ini-file.png)
+
+- Save the file with the file name : 'settings.ini'
+
+- In the RCL Web App 'Create/Update Custom PHI.INI' page, select 'Non-System' Type and upload the 'settings.ini' file you created earlier. Click the Submit button when you are done
+
+![image](../images/installation/php-ini-upload.png)
+
+- In the RCL Web App portal, ensure that the PHI.INI settings is correctly set for EspoCRM
+
+- You will need to restart the app for the settings to take effect
+
+![image](../images/installation/espocrm-php-ini-settings.png)
+
+- In the RCL Web Apps portal, click the 'Restart' button for the EspoCRM web app. Wait for few minutes for the app to restart before you continue with the installation.
+
+![image](../images/installation/espocrm-manage.png)
+
+## Setting Up The Database
+
+- Open the EspoCRM app and continue the installation
+
+- Select the language and click the 'Start' button
 
 ![image](../images/installation/espocrm-install-lang.png)
 
@@ -58,7 +98,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 - You will need to get the database connection settings from the in-app database in the App Service Plan.
 
-- In the RCL Web Apps portal, in the web app click the 'Manage' drop down, and click on 'View web app Database Connection and Properties'
+- In the RCL Web Apps portal, in the EspoCRM web app click the 'Manage' drop down, and click on 'View web app Database Connection and Properties'
 
 ![image](../images/installation/webapp-db-conn.png)
 
@@ -74,35 +114,40 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ![image](../images/installation/espocrm-install-db-conn.png)
 
-- In the 'System Requirements' section, you will notice that we need to change the following PHP.INI settings
+- Ensure the system requirements (including the custom setting we created earlier) passes the validation tests. Click the 'Next' button to proceed
 
-![image](../images/installation/espocrm-settings-fail.png)
+![image](../images/installation/espocrm-system-requirements.png)
 
-- In the RCL Web Apps portal, in the web app click the 'Manage' drop down, and click on 'View web app Database Connection and Properties'
+- Set the Username and Password to login and click the 'Next' button
 
-![image](../images/installation/webapp-php-ini.png)
+![image](../images/installation/espocrm-set-password.png)
 
-- In the Custom PHP.INI page, clcik the 'Create/Update custom PHP.INI' settings link
+- Set the 'System Settings' and complete the installation
 
-![image](../images/installation/php-ini-create.png)
+![image](../images/installation/espocrm-system-settings.png)
 
-- Create a text file with the following settings :
+- Login to the admin portal to start using the app
 
-![image](../images/installation/espocrm-php-ini-file.png)
+![image](../images/installation/espocrm-admin-portal.png)
 
-- Save the file with the file name : 'settings.ini'
+## Cron Job
 
-- In the RCL Web App 'Create/Update Custom PHI.INI' page, select 'Non-System' Type and upload the 'settings.ini' file you created earlier. Click the Submit button when you are done
+You must verify that the EspoCRM cron jobs are running successfully.
 
-![image](../images/installation/php-ini-upload.png)
+- In the RCL Web Apps portal, in the EspoCRM web app click the 'Manage' drop down, and click on 'Setup Cron jobs' link
 
-- In the RCL Web App portal, ensure that the PHI.INI settings is correctly set 
+![image](../images/installation/espocrm-manage.png)
 
-![image](../images/installation/espocrm-php-ini-settings.png)
+- In the 'Cron Jobs' page, click the 'View Cron (web) Jobs Dashboard
 
-- In the EspoCRM installation page. recheck the settings
+![image](../images/installation/espocrm-cron-job.png)
 
-![image](../images/installation/espocrm-php-ini-recheck.png)
+- Ensure the cron jobs are successfully running every 5 minutes
+
+![image](../images/installation/espocrm-cron-job-dashboard.png)
+
+
+
 
 
 
