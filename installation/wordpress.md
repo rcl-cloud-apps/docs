@@ -46,7 +46,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ![image](../images/installation/wordpress-manage.png)
 
-- You should see the WordPress install page. If you do not see this page or you are presented with another page or a 'not found' message, wait for a few more minutes for the site to be installed in the App Service Plan.
+- You should see the WordPress install page. If you do not see this page, wait for a few more minutes for the site to be installed in the App Service Plan
 
 - Select the language and click the 'Continue' button.
 
