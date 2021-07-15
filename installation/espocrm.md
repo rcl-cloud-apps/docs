@@ -79,7 +79,7 @@ upload_max_filesize=20M
 
 - Save the file with the file name : 'settings.ini'
 
-- In the 'Create/Update Custom PHI.INI' page, select 'Non-System' Type and upload the 'settings.ini' file you created earlier. Click the Submit button when you are done
+- In the 'Create/Update Custom PHI.INI' page, select 'Non-System' Type and upload the 'settings.ini' file you created earlier. Click the 'Submit' button when you are done
 
 ![image](../images/installation/php-ini-upload.PNG)
 

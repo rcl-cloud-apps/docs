@@ -1,24 +1,26 @@
 ---
 title: osTicket
-description: Learn how to install osTicket in an Azure App Service Plan using RCL Web Apps
+description: Learn how to install osTicket as an Azure App Service in an Azure App Service Plan using RCL Web Apps
 parent: Installation
 nav_order: 3
 ---
 
 # Introduction
 
-In this section, you will learn how to install osTicket in a Azure App Service Plan using RCL Web Apps.
+In this section, you will learn how to install osTicket as an [Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/overview) in a [Azure App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans) using RCL Web Apps.
 
 # Requirements
 
 An **Azure App Service Plan** is required for this installation. The App Service Plan must be :
 
-- Higher than the Free and Shared Tier
+- Higher than the **Free** and **Shared** Tier
 - A Windows Server
+
+You can refer to this link to [Create an App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage) if you do not have an existing one.
 
 # Installation
 
-## App Service Plan
+## Create The osTicket App Service
 
 - In the RCL Web Apps portal, click on the 'Install Web Apps' menu item
 
@@ -26,9 +28,9 @@ An **Azure App Service Plan** is required for this installation. The App Service
 
 ![image](../images/installation/osticket-install.PNG)
 
-- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. The App Service Plan must be higher than the Free and Shared tiers.
+- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. **The App Service Plan must be higher than the Free and Shared tiers and must be a Windows Server**
 
-- Click the 'Submit' button when you are done.
+- Click the 'Submit' button when you are done
 
 ![image](../images/installation/webapp-install.PNG)
 
@@ -52,7 +54,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ## Custom PHP Extension
 
-osTicket requires the APCu extension. Download the extension from the following link :
+osTicket requires the **APCu** extension. Download the extension from the following link :
 
 https://windows.php.net/downloads/pecl/releases/apcu/5.1.20/php_apcu-5.1.20-7.4-nts-vc15-x86.zip
 
@@ -60,14 +62,13 @@ APCu 5.1.20 for Windows, PHP 7.4, Non Thread Safe (NTS) x86
 
 Extract the .dll file from the zip folder.
 
-- In the Web App list, click on the 'Manage' drop down button and click on the 'Custom PHP Extensions' link
+- In the RCL Web App list, click on the 'Manage' drop down button and click on the 'Custom PHP Extensions' link
 
 - In the Custom PHP Extension page, click the 'Create/Update Custom Extension' link
 
 - Upload the dll file and click the 'Submit' button
 
 ![image](../images/installation/osticket-custom-php-setting.PNG)
-
 
 - Ensure the PHP extension is installed
 
@@ -103,11 +104,11 @@ Extract the .dll file from the zip folder.
 
 ## Set Config File Permission
 
-As a security measure, you should remove the write access permission of the ost-config.php file.
+As a security measure, you should remove the write access permission of the 'ost-config.php' file.
 
 - In the RCL Web Apps portal, in the osTicket web app click the 'Manage' drop down, and click on 'Use Kudu to configure web app files'
 
-- In Kudu, in the Debug console menu, click on the PowerShell link
+- In Kudu, in the 'Debug console' menu, click on the PowerShell link
 
 - Navigate to the 'wwwroot' folder
 
@@ -135,7 +136,7 @@ You must verify that the osTicket cron jobs are running successfully.
 
 ## Start Using the Application
 
-- Login to the admin Portal and start administering the site
+- Login to the admin portal and start administering the web application
 
 ![image](../images/installation/osticket-admin-portal.PNG)
 
