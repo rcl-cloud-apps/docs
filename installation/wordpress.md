@@ -28,9 +28,9 @@ You can refer to this link to [Create an App Service Plan](https://docs.microsof
 
 ![image](../images/installation/wordpress-install.PNG)
 
-- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. **The App Service Plan must be higher than the Free and Shared tiers and must be a Windows Server**.
+- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. **The App Service Plan must be higher than the Free and Shared tiers and must be a Windows Server**
 
-- Click the 'Submit' button when you are done.
+- Click the 'Submit' button when you are done
 
 ![image](../images/installation/webapp-install.PNG)
 
@@ -50,7 +50,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 - You should see the WordPress install page. If you do not see this page, wait for a few more minutes for the site to be installed in the App Service Plan
 
-- Select the language and click the 'Continue' button.
+- Select the language and click the 'Continue' button
 
 ![image](../images/installation/wordpress-install-lang.PNG)
 
