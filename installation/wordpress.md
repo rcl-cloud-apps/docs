@@ -1,24 +1,26 @@
 ---
 title: WordPress
-description: Learn how to install WordPress in an Azure App Service Plan using RCL Web Apps
+description: Learn how to install WordPress as an Azure App Service in an Azure App Service Plan using RCL Web Apps
 parent: Installation
 nav_order: 1
 ---
 
 # Introduction
 
-In this section, you will learn how to install WordPress in a Azure App Service Plan using RCL Web Apps.
+In this section, you will learn how to install WordPress as an [Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/overview) in a [Azure App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans) using RCL Web Apps.
 
 # Requirements
 
 An **Azure App Service Plan** is required for this installation. The App Service Plan must be :
 
-- Higher than the Free and Shared Tier
+- Higher than the **Free** and **Shared** Tier
 - A Windows Server
+
+You can refer to this link to [Create an App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage) if you do not have an existing one.
 
 # Installation
 
-## App Service Plan
+## Create The WordPress App Service
 
 - In the RCL Web Apps portal, click on the 'Install Web Apps' menu item
 
@@ -26,7 +28,7 @@ An **Azure App Service Plan** is required for this installation. The App Service
 
 ![image](../images/installation/wordpress-install.PNG)
 
-- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. The App Service Plan must be higher than the Free and Shared tiers.
+- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. **The App Service Plan must be higher than the Free and Shared tiers and must be a Windows Server**.
 
 - Click the 'Submit' button when you are done.
 
@@ -56,7 +58,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ![image](../images/installation/wordpress-install-info.PNG)
 
-- Wait for a few minutes for the installation to complete. Then, click the 'Log In' button to login to the WordPress Admin Portal.
+- Wait for a few minutes for the installation to complete. Then, click the 'Log In' button to login to the WordPress Admin Portal
 
 ![image](../images/installation/wordpress-install-login.PNG)
 
@@ -64,7 +66,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ![image](../images/installation/wordpress-install-login2.PNG)
 
-- You can start building your website in the WordPress Admin Portal.
+- You can start building your website in the WordPress Admin Portal
 
 ![image](../images/installation/wordpress-admin-portal.PNG)
 
