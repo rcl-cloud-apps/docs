@@ -24,17 +24,17 @@ An **Azure App Service Plan** is required for this installation. The App Service
 
 - Then click the 'Install' button in the osTicket panel
 
-![image](../images/installation/osticket-install.png)
+![image](../images/installation/osticket-install.PNG)
 
 - In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. The App Service Plan must be higher than the Free and Shared tiers.
 
 - Click the 'Submit' button when you are done.
 
-![image](../images/installation/webapp-install.png)
+![image](../images/installation/webapp-install.PNG)
 
 - **You will need to wait 15 minutes for the web app to be completely installed in the App Service Plan, so be patient.**
 
-![image](../images/installation/operation-submitted.png)
+![image](../images/installation/operation-submitted.PNG)
 
 ## Installing osTicket
 
@@ -44,11 +44,11 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 - In the 'Manage' dropdown menu, select 'Launch Web App'
 
-![image](../images/installation/osticket-manage.png)
+![image](../images/installation/osticket-manage.PNG)
 
 - You should see the osTicket install page. If you do not see this page, wait for a few more minutes for the site to be installed in the App Service Plan
 
-![image](../images/installation/osticket-install-requirements.png)
+![image](../images/installation/osticket-install-requirements.PNG)
 
 ## Custom PHP Extension
 
@@ -66,12 +66,12 @@ Extract the .dll file from the zip folder.
 
 - Upload the dll file and click the 'Submit' button
 
-![image](../images/installation/osticket-custom-php-setting.png)
+![image](../images/installation/osticket-custom-php-setting.PNG)
 
 
 - Ensure the PHP extension is installed
 
-![image](../images/installation/osticket-custom-php-setting-list.png)
+![image](../images/installation/osticket-custom-php-setting-list.PNG)
 
 - **Restart** the web app and continue the installation
 
@@ -85,21 +85,21 @@ Extract the .dll file from the zip folder.
 
 - In the RCL Web Apps portal, in the osTicket web app click the 'Manage' drop down, and click on 'View web app Database Connection and Properties'
 
-![image](../images/installation/webapp-db-conn.png)
+![image](../images/installation/webapp-db-conn.PNG)
 
 - The database connection is shown below
 
-![image](../images/installation/webapp-db-conn2.png)
+![image](../images/installation/webapp-db-conn2.PNG)
 
 - Enter the database settings on the osTicket page. The 'MySQL Hostname' should include the port (Full Host)
 
 - When you are done, click the 'Install Now' button
 
-![image](../images/installation/osticket-install-db-conn.png)
+![image](../images/installation/osticket-install-db-conn.PNG)
 
 - The installation will complete
 
-![image](../images/installation/osticket-install-complete.png)
+![image](../images/installation/osticket-install-complete.PNG)
 
 ## Set Config File Permission
 
@@ -117,7 +117,7 @@ As a security measure, you should remove the write access permission of the ost-
 icacls include\ost-config.php /reset
 ```
 
-![image](../images/installation/osticket-config-file.png)
+![image](../images/installation/osticket-config-file.PNG)
 
 ## Cron Job
 
@@ -127,20 +127,20 @@ You must verify that the osTicket cron jobs are running successfully.
 
 - In the 'Cron Jobs' page, click the 'View Cron (web) Jobs Dashboard
 
-![image](../images/installation/espocrm-cron-job.png)
+![image](../images/installation/espocrm-cron-job.PNG)
 
 - Ensure the cron jobs are successfully running every 5 minutes
 
-![image](../images/installation/espocrm-cron-job-dashboard.png)
+![image](../images/installation/espocrm-cron-job-dashboard.PNG)
 
 ## Start Using the Application
 
 - Login to the admin Portal and start administering the site
 
-![image](../images/installation/osticket-admin-portal.png)
+![image](../images/installation/osticket-admin-portal.PNG)
 
 - Create a ticket in the customer portal
 
-![image](../images/installation/osticket-customer-portal.png)
+![image](../images/installation/osticket-customer-portal.PNG)
 
 

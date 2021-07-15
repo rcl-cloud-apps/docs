@@ -24,17 +24,17 @@ An **Azure App Service Plan** is required for this installation. The App Service
 
 - Then click the 'Install' button in the phpList panel
 
-![image](../images/installation/phplist-install.png)
+![image](../images/installation/phplist-install.PNG)
 
 - In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. The App Service Plan must be higher than the Free and Shared tiers.
 
 - Click the 'Submit' button when you are done.
 
-![image](../images/installation/webapp-install.png)
+![image](../images/installation/webapp-install.PNG)
 
 - **You will need to wait 15 minutes for the web app to be completely installed in the App Service Plan, so be patient.**
 
-![image](../images/installation/operation-submitted.png)
+![image](../images/installation/operation-submitted.PNG)
 
 ## Installing phpList
 
@@ -46,11 +46,11 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 - In the RCL Web Apps portal, in the phpList web app click the 'Manage' drop down, and click on 'View web app Database Connection and Properties'
 
-![image](../images/installation/webapp-db-conn.png)
+![image](../images/installation/webapp-db-conn.PNG)
 
 - The database connection is shown below
 
-![image](../images/installation/webapp-db-conn2.png)
+![image](../images/installation/webapp-db-conn2.PNG)
 
 - In the 'Manage' drop down, lick on 'Use Kudu to configure web app files'
 
@@ -58,11 +58,11 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 - Navigate to site/wwwroot/lists/config
 
-![image](../images/installation/phplist-kudu-config.png)
+![image](../images/installation/phplist-kudu-config.PNG)
 
 - Edit the config.php file to configure the database connection
 
-![image](../images/installation/phplist-kudu-config-db.png)
+![image](../images/installation/phplist-kudu-config-db.PNG)
 
 ## Setting Up SMTP Email Sender
 
@@ -70,7 +70,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 - The following example shows the settings in the config.php file for sending emails from a gmail account
 
-![image](../images/installation/phplist-smtp-configure.png)
+![image](../images/installation/phplist-smtp-configure.PNG)
 
 ## Initializing The Database
 
@@ -78,29 +78,29 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 - In the phpList install page, click on the 'Initialise Database' link
 
-![image](../images/installation/phplist-db-initialize.png)
+![image](../images/installation/phplist-db-initialize.PNG)
 
 - Add the information to initialize the database and click the 'Continue' button when you are done
 
-![image](../images/installation/phplist-db-initialize-info.png)
+![image](../images/installation/phplist-db-initialize-info.PNG)
 
 - Ensure the database is successfully initialized
 
-![image](../images/installation/phplist-db-initialize-done.png)
+![image](../images/installation/phplist-db-initialize-done.PNG)
 
 
 ## Configuring Gmail 
 
 If you are using Gmail to send emails, you will need to [allow less secure apps](https://support.google.com/accounts/answer/6010255?hl=en) in your Google account.
 
-![image](../images/installation/phplist-google-security-app.png)
+![image](../images/installation/phplist-google-security-app.PNG)
 
 You may need to also resolve Gmail security issues by clicking 'Yest, it was me'
 
-![image](../images/installation/phplist-google-security-alert.png)
+![image](../images/installation/phplist-google-security-alert.PNG)
 
 ## Start Using the Application
 
 - Login to the admin Portal and start using the application
 
-![image](../images/installation/phplist-admin-portal.png)
+![image](../images/installation/phplist-admin-portal.PNG)
