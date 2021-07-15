@@ -2,7 +2,7 @@
 title: App Service Plan
 description: Learn how to create an App Service Plan in Microsoft Azure
 has_children: false
-nav_order: 1
+nav_order: 2
 ---
 
 # Introduction
