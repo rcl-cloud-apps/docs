@@ -56,7 +56,7 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 osTicket requires the **APCu** extension. Download the extension from the following link :
 
-https://windows.php.net/downloads/pecl/releases/apcu/5.1.20/php_apcu-5.1.20-7.4-nts-vc15-x86.zip
+[https://windows.php.net/downloads/pecl/releases/apcu/5.1.20/php_apcu-5.1.20-7.4-nts-vc15-x86.zip](https://windows.php.net/downloads/pecl/releases/apcu/5.1.20/php_apcu-5.1.20-7.4-nts-vc15-x86.zip)
 
 APCu 5.1.20 for Windows, PHP 7.4, Non Thread Safe (NTS) x86
 
@@ -74,7 +74,7 @@ Extract the .dll file from the zip folder.
 
 ![image](../images/installation/osticket-custom-php-setting-list.PNG)
 
-- **Restart** the web app and continue the installation
+- **Restart** the web app for the extension to take effect and continue the installation
 
 ## Basic Installation
 

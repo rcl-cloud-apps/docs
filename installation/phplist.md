@@ -1,24 +1,26 @@
 ---
 title: phpList
-description: Learn how to install phpList in an Azure App Service Plan using RCL Web Apps
+description: Learn how to install phpList as an Azure App Service in an Azure App Service Plan using RCL Web Apps
 parent: Installation
 nav_order: 4
 ---
 
 # Introduction
 
-In this section, you will learn how to install phpList in a Azure App Service Plan using RCL Web Apps.
+In this section, you will learn how to install phpList as an [Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/overview) in a [Azure App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans) using RCL Web Apps.
 
 # Requirements
 
 An **Azure App Service Plan** is required for this installation. The App Service Plan must be :
 
-- Higher than the Free and Shared Tier
+- Higher than the **Free** and **Shared** Tier
 - A Windows Server
+
+You can refer to this link to [Create an App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage) if you do not have an existing one.
 
 # Installation
 
-## App Service Plan
+## Create The phpList App Service
 
 - In the RCL Web Apps portal, click on the 'Install Web Apps' menu item
 
@@ -26,7 +28,7 @@ An **Azure App Service Plan** is required for this installation. The App Service
 
 ![image](../images/installation/phplist-install.PNG)
 
-- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. The App Service Plan must be higher than the Free and Shared tiers.
+- In the installation page, select the Azure Resource Group and the Azure App Service Plan to install the web app. **The App Service Plan must be higher than the Free and Shared tiers and must be a Windows Server**
 
 - Click the 'Submit' button when you are done.
 
@@ -52,23 +54,23 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ![image](../images/installation/webapp-db-conn2.PNG)
 
-- In the 'Manage' drop down, lick on 'Use Kudu to configure web app files'
+- In the 'Manage' drop down, click on 'Use Kudu to configure web app files'
 
 - In Kudu, click on 'CMD' in the 'Debug console' menu link
 
-- Navigate to site/wwwroot/lists/config
+- Navigate to site/wwwroot/lists/config folder
 
 ![image](../images/installation/phplist-kudu-config.PNG)
 
-- Edit the config.php file to configure the database connection
+- Edit the 'config.php' file to set up the database connection
 
 ![image](../images/installation/phplist-kudu-config-db.PNG)
 
 ## Setting Up SMTP Email Sender
 
-- Configure an external mail server for handling phpList email
+- Configure an external mail server for handling phpList emails
 
-- The following example shows the settings in the config.php file for sending emails from a gmail account
+- The following example shows the settings in the 'config.php' file for sending emails from a Gmail account
 
 ![image](../images/installation/phplist-smtp-configure.PNG)
 
@@ -95,12 +97,12 @@ If you are using Gmail to send emails, you will need to [allow less secure apps]
 
 ![image](../images/installation/phplist-google-security-app.PNG)
 
-You may need to also resolve Gmail security issues by clicking 'Yest, it was me'
+You may need to also resolve Gmail security issues by clicking 'Yes, it was me' link
 
 ![image](../images/installation/phplist-google-security-alert.PNG)
 
 ## Start Using the Application
 
-- Login to the admin Portal and start using the application
+- Login to the admin Portal and start using the web application
 
 ![image](../images/installation/phplist-admin-portal.PNG)
