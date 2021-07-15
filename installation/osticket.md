@@ -92,7 +92,7 @@ Extract the .dll file from the zip folder.
 
 ![image](../images/installation/webapp-db-conn2.PNG)
 
-- Enter the database settings on the osTicket page. The 'MySQL Hostname' should include the port (Full Host)
+- Enter the database settings on the osTicket installation page. The 'MySQL Hostname' should include the port (Full Host)
 
 - When you are done, click the 'Install Now' button
 
