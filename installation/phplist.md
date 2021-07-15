@@ -74,6 +74,8 @@ Once the web application is successfully installed in the App Service Plan, you 
 
 ![image](../images/installation/phplist-smtp-configure.PNG)
 
+- Click the 'Save' button when you are done
+
 ## Initializing The Database
 
 - In the RCL Web Apps portal, in the phpList web app click the 'Manage' drop down, and click on 'Launch Web App'
