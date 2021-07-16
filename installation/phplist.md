@@ -2,7 +2,7 @@
 title: phpList
 description: Learn how to install phpList as an Azure App Service in an Azure App Service Plan using RCL Web Apps
 parent: Installation
-nav_order: 4
+nav_order: 6
 ---
 
 # Introduction

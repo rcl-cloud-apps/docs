@@ -2,7 +2,7 @@
 title: EspoCRM
 description: Learn how to install EspoCRM as an Azure App Service in an Azure App Service Plan using RCL Web Apps
 parent: Installation
-nav_order: 2
+nav_order: 5
 ---
 
 # Introduction

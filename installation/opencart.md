@@ -2,7 +2,7 @@
 title: OpenCart
 description: Learn how to install OpenCart as an Azure App Service in an Azure App Service Plan using RCL Web Apps
 parent: Installation
-nav_order: 4
+nav_order: 2
 ---
 
 # Introduction
